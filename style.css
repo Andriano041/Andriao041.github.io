@@ -1,0 +1,123 @@
+@keyframes light {
+    0% {
+      box-shadow: 0 0 10px rgba(171, 13, 234, 0.7), 0 0 20px rgba(121, 247, 4, 0.7);
+    }
+    50% {
+      box-shadow: 0 0 20px rgba(76, 11, 243, 0.9), 0 0 30px rgba(183, 13, 245, 0.9);
+    }
+    100% {
+      box-shadow: 0 0 10px rgba(161, 6, 209, 0.7), 0 0 20px rgba(58, 6, 249, 0.7);
+    }
+  }
+  
+  
+  /* Style untuk kotak signup */
+  .signup-container {
+    width: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgb(180, 46, 2);
+    padding: 50px;
+    border: 3px solid rgb(199, 5, 238);
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(62, 201, 3, 0.2);
+    background-color: rgba(12, 193, 238, 0.028);
+    animation: light 3s infinite alternate; /* Menambahkan animasi cahaya */
+    
+  }
+  
+  /* Style untuk kotak input */
+  input[type="email"],
+  input[type="password"] {
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid rgb(50, 42, 165);
+    border-radius: 3px;
+    background-color: rgba(209, 221, 227, 0); /* Mengatur efek transparansi */
+    color: rgb(9, 236, 54)
+   
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    background-image: url('ia.jpg');
+    background-size: cover; 
+    background-attachment: fixed;
+    background-repeat: no-repeat; /* agar gambar tidak diulang */
+    font-family: Monospace Fonts;
+  }
+  
+  h1, label {
+    color: #0952fe; 
+  }
+  
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+
+  
+  /* Style untuk tombol login */
+  .signup-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #061af6;
+    color: rgb(234, 238, 234);
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  /* Style untuk tombol login saat dihover */
+  .signup-button:hover {
+    background-color: #9606ef;
+  }
+  
+  /* Style untuk pesan error */
+  .error-message {
+    color: #4aff3a;
+    font-size: 14px;
+    margin-top: 10px;
+  }
+/* Style untuk tautan "Sign Up with Google" dan "Sign Up with Facebook" */
+.social-login {
+    display: flex;
+    justify-content: center; /* Mengatur konten ke tengah */
+    margin-top: 30px;
+}
+
+.google-signup,
+.facebook-signup {
+    text-decoration: none;
+    display: flex; 
+    align-items: center; 
+    padding: 0px;
+    border: 0px solid #db0f0f;
+    border-radius: 5px;
+    margin-left: 20px; 
+    transition: all 0.3s ease;
+}
+
+.google-signup:hover,
+.facebook-signup:hover {
+    border-color: #333;
+}
+
+/* Style untuk gambar ikon */
+.google-signup img,
+.facebook-signup img {
+    width: 30px; 
+    height: 30px; 
+    margin-right: 10px; 
+}
+
+
+  
+  
